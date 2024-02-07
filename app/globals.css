@@ -1,27 +1,83 @@
+/* In your Tailwind CSS file */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Mansalva&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --background-start-rgb: 245, 227, 188;
+  --background-end-rgb: 245, 227, 188;
+  --gradient-color: 245, 227, 188;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+      to right,
+      rgba(var(--gradient-color), 1),
+      /* Light orange */ rgba(var(--gradient-color), 1) calc(50% - 400px),
+      /* Light orange - 50% from left minus half of page width */
+        rgb(var(--background-start-rgb)) calc(50% - 400px),
+      /* Background start - 50% from left minus half of page width */
+        rgb(var(--background-start-rgb)) calc(50% + 400px),
+      /* Background start - 50% from left plus half of page width */
+        rgba(var(--gradient-color), 1) calc(50% + 400px),
+      /* Light orange - 50% from left plus half of page width */
+        rgba(var(--gradient-color), 1) /* Light orange */
+    ),
     rgb(var(--background-start-rgb));
+}
+
+.Logo {
+  font-family: "Cedarville Cursive", cursive;
+  /* color: #021627; */
+  color: #0e311f;
+}
+.navbarText {
+  color: #0e311f;
+  font-family: "Cedarville Cursive", cursive;
+}
+
+/* .intro {
+  font-family: 'Mansalva', sans-serif;
+  color: #0e311f;
+  font-size: 50px;
+}
+
+
+
+.name {
+  font-weight: normal;
+} */
+.intro {
+  font-family: "Mansalva", sans-serif;
+  color: #0e311f;
+  font-size: 50px;
+  /* display: flex;
+  flex-direction: column; */
+}
+.hey-there {
+  display: inline;
+  font-weight: 600;
+}
+.name {
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+  }
+
+  .intro > h1,
+  .intro > h2 {
+    margin-right: 20px; 
+  }
+}
+
+.aboutpara{
+  font-family: 'Single Day', cursive;
+  color: #0e311f;
 }
