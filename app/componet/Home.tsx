@@ -5,7 +5,7 @@ const Home = () => {
     <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-between mx-auto">
       <div className="intro">
         <h1 className="hey-there">Hey There,</h1>
-        <h2 className="name">I'm Abhishek Mishra</h2>
+        <h2 className="name">I&apos;m Abhishek Mishra</h2>
       </div>
       <div>
         <h4 className="hey-there name aboutpara">
