@@ -1,5 +1,5 @@
-import Navbar from "./componet/Navbar"
-import Homes from "./componet/Home"
+import Navbar from "./component/Navbar"
+import Homes from "./component/Home"
 
 export default function Home() {
   return (
