@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import abhishek from "../../public/images/abhishek.jpg"
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
       <div className="homeImg">
         <Image
           className="mainImg"
-          src={"/abhishek.jpg"}
+          src={abhishek}
           width={170}
           height={170}
           alt={"Abhishek Mishra"}
