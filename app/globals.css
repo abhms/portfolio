@@ -117,7 +117,14 @@ body {
 @media(max-width:767px){
   .e_mail{
     position: absolute !important;
-    top: 490px !important;
+    top: 475px !important;
+  }
+}
+
+@media(max-width:375px){
+  .e_mail{
+    position: absolute !important;
+    top: 520px !important;
   }
 }
 .e_mail{
