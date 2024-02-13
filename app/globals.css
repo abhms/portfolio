@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Mansalva&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 245, 227, 188;
@@ -76,6 +77,11 @@ body {
   .intro > h2 {
     margin-right: 20px;
   }
+  .e_mail{
+    flex-direction: row;
+    position: relative;
+    top: -20px;
+  }
 }
 
 .homeImg{
@@ -102,4 +108,24 @@ body {
     top: -8px;
     margin-top: 28px;
   }
+  .e_mail{
+    flex-direction: row;
+    position: relative;
+    top: -20px;
+  }
+}
+@media(max-width:767px){
+  .e_mail{
+    position: absolute !important;
+    top: 465px !important;
+  }
+}
+.e_mail{
+  position: absolute;
+  top: 350px;
+}
+.emailHad{
+  font-family: "Playfair Display", serif !important;
+  /* font-optical-sizing: auto !important; */
+  font-weight: 700 !important;
 }

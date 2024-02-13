@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-// import abhishek from "../../public/images/abhishek.jpg"
 
 const Home = () => {
   return (
@@ -24,6 +22,12 @@ const Home = () => {
       <div>
         <h4 className="hey-there name aboutpara">
           I develop beautiful things and I love what I do.
+        </h4>
+      </div>
+      <div className="e_mail">
+        <h1 className="emailHad">Email</h1>
+        <h4 className="hey-there name aboutpara">
+          {process.env.NEXT_PUBLIC_EMAIL}
         </h4>
       </div>
     </div>
