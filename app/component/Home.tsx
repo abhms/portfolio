@@ -12,9 +12,9 @@ const Home = () => {
       </div>
 
       <div className="homeImg">
-        <Image
+        <img
           className="mainImg"
-          src={`/abhishek.jpg`}
+          src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY}/image/upload/v1707843335/iw12wurflydq2v05znxh.jpg`}
           width={170}
           height={170}
           alt={"Abhishek Mishra"}
