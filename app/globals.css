@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Mansalva&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 245, 227, 188;
@@ -68,6 +68,41 @@ body {
   font-weight: normal;
 }
 
+@media (max-width: 768px) {
+  .experience {
+    position: absolute;
+    top: 520px !important;
+    text-align: center !important;
+  }
+  .experience_number {
+    position: absolute;
+    left: 140px;
+  }
+}
+
+.experience {
+  position: absolute;
+  right: 195px;
+  top: 98px;
+  margin: -26px;
+}
+.experience_text {
+  padding: 160px !important;
+  font-weight: 600;
+  color: #0e311f;
+}
+.experience_number {
+  position: absolute;
+  right: 1px;
+  /* font-weight: 600; */
+  top: -11px !important;
+}
+.experience_number h1 {
+  font-weight: 600 !important;
+  font-size: 5em !important;
+  color: #0e311f;
+}
+
 @media (min-width: 768px) {
   .intro {
     flex-direction: row;
@@ -77,21 +112,22 @@ body {
   .intro > h2 {
     margin-right: 20px;
   }
-  .e_mail{
+  .e_mail {
     flex-direction: row;
     position: relative;
     top: -20px;
   }
 }
 
-.homeImg{
+.homeImg {
   padding: 10px;
-
 }
 
 .aboutpara {
   font-family: "Single Day", cursive;
   color: #0e311f;
+  position: relative;
+    top: 10px;
 }
 .mainImg {
   /* object-fit: contain; */
@@ -108,30 +144,37 @@ body {
     top: -8px;
     margin-top: 28px;
   }
-  .e_mail{
+  .e_mail {
     flex-direction: row;
     position: relative;
     top: -20px;
   }
 }
-@media(max-width:767px){
-  .e_mail{
+@media (max-width: 767px) {
+  .e_mail {
     position: absolute !important;
-    top: 475px !important;
+    top: 580px !important;
+    margin-top: 25px;
+  }
+  .experience {
+    position: absolute;
+    left: 140px;
+
   }
 }
 
-@media(max-width:375px){
-  .e_mail{
+@media (max-width: 375px) {
+  .e_mail {
     position: absolute !important;
-    top: 520px !important;
+    top: 580px !important;
   }
+
 }
-.e_mail{
+.e_mail {
   position: absolute;
   top: 350px;
 }
-.emailHad{
+.emailHad {
   font-family: "Playfair Display", serif !important;
   /* font-optical-sizing: auto !important; */
   font-weight: 700 !important;
