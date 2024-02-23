@@ -65,7 +65,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#" className="block py-2 px-3 rounded navbarText">
-                CONTACT
+                SKILLS
               </a>
             </li>
             <li>

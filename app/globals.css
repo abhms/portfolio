@@ -71,12 +71,29 @@ body {
 @media (max-width: 768px) {
   .experience {
     position: absolute;
-    top: 520px !important;
+    left: 120px !important;
+    right: -37px !important;
+    margin-top: 0.5px !important;
+    top: 585px !important;
+    /* align-items: center !important; */
+  }
+  .experience_number h1 {
+    position: absolute;
+    left: -198px;
+    top: -70px !important; 
     text-align: center !important;
   }
-  .experience_number {
+  .experience_text {
     position: absolute;
-    left: 140px;
+    left: -198px;
+    top: -70px !important;
+    text-align: center !important;
+  }
+  .icons_span{
+    display: flex;
+    position: absolute;
+    margin-top: 22px;
+    left: -70px
   }
 }
 
@@ -87,9 +104,11 @@ body {
   margin: -26px;
 }
 .experience_text {
-  padding: 160px !important;
   font-weight: 600;
   color: #0e311f;
+  margin-top: 16px;
+  position: absolute;
+  right: 66px;
 }
 .experience_number {
   position: absolute;
@@ -127,7 +146,7 @@ body {
   font-family: "Single Day", cursive;
   color: #0e311f;
   position: relative;
-    top: 10px;
+  top: 10px;
 }
 .mainImg {
   /* object-fit: contain; */
@@ -158,17 +177,64 @@ body {
   }
   .experience {
     position: absolute;
-    left: 140px;
+    left: 120px;
+    right: 130px;
+    margin-top: 0.5px;
+  }
+  .experience_number h1 {
+    position: absolute;
+    left: -198px;
+    top: -70px !important;
+  }
+  .experience_text {
+    position: absolute;
+    left: -198px;
+    top: -70px !important;
+
+    text-align: center !important;
+  }
+  .cert{
+    position: absolute;
+    top: 1px;
+    left: 9px;
+    right: 130px;
+    margin-top: 0.5px;
 
   }
 }
+/* @media screen and (min-width: 446px) and (max-width: 768px) {
+  .experience {
+    position: absolute;
 
+  }
+  .experience_number h1 {
+    position: absolute;
+    left: -198px;
+    top: -70px !important;
+  }
+  .experience_text {
+    position: absolute;
+    left: -198px;
+    top: -70px !important;
+
+    text-align: center !important;
+  }
+} */
+
+.cert{
+  position: absolute;
+    top: 418px !important;
+    right: 168px !important;
+    width: 843px !important;
+    height: 271px !important;
+    display: flex !important;
+    gap: 17px !important;
+}
 @media (max-width: 375px) {
   .e_mail {
     position: absolute !important;
     top: 580px !important;
   }
-
 }
 .e_mail {
   position: absolute;
@@ -178,4 +244,29 @@ body {
   font-family: "Playfair Display", serif !important;
   /* font-optical-sizing: auto !important; */
   font-weight: 700 !important;
+}
+
+.icons {
+  margin: 20px;
+}
+
+.icons_img {
+  width: 20px;
+}
+.cert{
+  /* display: inline; */
+  position: absolute;
+  top: 418px;
+  right: 459px;
+  width: 547px;
+  height: 271px;
+  display: flex;
+  gap: 69px;
+}
+
+.mern_img{
+  width: 300px;
+}
+.jp_img{
+  width: 300px;
 }

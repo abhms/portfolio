@@ -1,7 +1,12 @@
 "use client";
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin,faSquareXTwitter,faMedium ,faGithub} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faSquareXTwitter,
+  faMedium,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 const Home = () => {
   return (
     <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-between mx-auto">
@@ -38,15 +43,62 @@ const Home = () => {
         <h4 className="hey-there name aboutpara">
           {process.env.NEXT_PUBLIC_EMAIL}
         </h4>
-
-        <h3><FontAwesomeIcon icon={faLinkedin} /></h3>
-        <h3><FontAwesomeIcon icon={faSquareXTwitter} /></h3>
-        <h3><FontAwesomeIcon icon={faMedium} /></h3>
-        <h3><FontAwesomeIcon icon={faGithub} /></h3>
-        <img src="/leetcode.svg" alt="leetcode" width={"15px"}/>
+        <span className="icons_span">
+          <h3 className="icons">
+            <a href="https://www.linkedin.com/in/abhishek-mishra-8801a21b4/">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+          </h3>
+          <h3 className="icons">
+            <a href="https://twitter.com/npa_web">
+              <FontAwesomeIcon icon={faSquareXTwitter} size="2x" />
+            </a>
+          </h3>
+          <h3 className="icons">
+            <a href="https://theabhishek7.medium.com/">
+              <FontAwesomeIcon icon={faMedium} size="2x" />
+            </a>
+          </h3>
+          <h3 className="icons">
+            <a href="https://github.com/abhms">
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
+          </h3>
+          <a href="https://leetcode.com/abhms/">
+            <img
+              className="icons icon_img"
+              src="/leetcode.svg"
+              alt="leetcode"
+              width={"30px"}
+            />
+          </a>
+        </span>
       </div>
       <div className="cert">
-
+        <span>
+          <img
+            className="mern_img"
+            src="/MERN.jpg"
+            // width={"1px"}
+            alt="Full stack certificate"
+          />
+          <h4>
+            Udemy Certificate of <strong>FULL STACK DEVELOPER</strong>
+          </h4>
+        </span>
+        <span>
+          <img
+            className="jp_img"
+            src="/jp_morgan.jpg"
+            // width={"1px"}
+            alt="Jp Morgan certificate"
+          />
+          <h4>
+            Internship in JPMorgan Chase & Co. Of{" "}
+            <strong>SOFTWARE ENGINEER VIRTUAL EXPERIENCE</strong>
+          </h4>
+        </span>
+        <span></span>
       </div>
     </div>
   );
