@@ -195,11 +195,28 @@ body {
   }
   .cert{
     position: absolute;
-    top: 1px;
+    top: 18px;
     left: 9px;
     right: 130px;
     margin-top: 0.5px;
 
+  }
+  .cert_mern{
+    display: grid !important;
+    position: relative !important;
+    left: 36px !important;
+    top: 328px !important;
+    width: 423px !important;
+  }
+  .cert_jp{
+    display: grid;
+    position: relative;
+    right: 302px;
+    top: 618px;
+  }
+  .strong_jp{
+    font-weight: bolder;
+    display: -webkit-inline-box;
   }
 }
 /* @media screen and (min-width: 446px) and (max-width: 768px) {
@@ -229,6 +246,11 @@ body {
     height: 271px !important;
     display: flex !important;
     gap: 17px !important;
+}
+
+.cert h4{
+  font-family: "Mansalva", sans-serif;
+  color: #0e311f;
 }
 @media (max-width: 375px) {
   .e_mail {
@@ -263,6 +285,7 @@ body {
   display: flex;
   gap: 69px;
 }
+
 
 .mern_img{
   width: 300px;

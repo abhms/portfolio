@@ -75,7 +75,7 @@ const Home = () => {
         </span>
       </div>
       <div className="cert">
-        <span>
+        <span className="cert_mern">
           <img
             className="mern_img"
             src="/MERN.jpg"
@@ -86,7 +86,7 @@ const Home = () => {
             Udemy Certificate of <strong>FULL STACK DEVELOPER</strong>
           </h4>
         </span>
-        <span>
+        <span className="cert_jp">
           <img
             className="jp_img"
             src="/jp_morgan.jpg"
@@ -95,7 +95,7 @@ const Home = () => {
           />
           <h4>
             Internship in JPMorgan Chase & Co. Of{" "}
-            <strong>SOFTWARE ENGINEER VIRTUAL EXPERIENCE</strong>
+            <strong className="strong_jp">SOFTWARE ENGINEER VIRTUAL EXPERIENCE</strong>
           </h4>
         </span>
         <span></span>
