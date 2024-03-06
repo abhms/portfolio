@@ -293,3 +293,27 @@ body {
 .jp_img{
   width: 300px;
 }
+@media screen and (min-width: 775px) and (max-width: 1545px){
+.cert {
+    position: absolute;
+    align-items: center;
+    left: 30%;
+}
+}
+@media screen and (max-width:774px) {
+  .cert {
+    align-items: center;
+    left: 30%;
+}
+}
+
+.allexperience {
+  position: absolute;
+  bottom: 0px;
+  left: 32%;
+  align-items: center;
+  display: flex;
+  gap: 250px;
+  margin-top: 20px; 
+  margin-bottom: -70px;
+}
